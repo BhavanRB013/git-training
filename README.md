@@ -11,3 +11,11 @@ after giving git status it gived modified
 used git add which will push my changes to stagging area consider this as the entry before saving it in remote server
 then used git commit to save it in remote server
 
+--------------------------------------------
+now there is a problem for pushing it in remote as because current git doesn't accept
+uploading using password so it needs some key so the process is
+generate a ssh key
+copy the key
+in github setting under deploy keys add it
+as owr git is using http we need to switch it to ssh
+then push
