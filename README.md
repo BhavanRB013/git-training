@@ -19,3 +19,11 @@ copy the key
 in github setting under deploy keys add it
 as owr git is using http we need to switch it to ssh
 then push
+
+------------------------------------------------------
+1. go to home directory and use the command "ssh-keygen -t ed25519 -C "your-email@gmail.com"".
+2. this will be located in the ~/.ssh/ path. copy the content of .pub file
+3. you can check whether the key is present or not by using the command "\eval "$(ssh-agent -s)"" followed by
+ssh-add .ssh/ssh-key
+4. to change from http to ssh the folloeing command is used "it remote set-url origin git@github.com:BhavanRB013/git-training.git" 
+5. to check whether youa re using http or ssh the command "git remote -v" is used
